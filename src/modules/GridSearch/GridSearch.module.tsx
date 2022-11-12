@@ -15,22 +15,21 @@ const GridSearch: React.FC<IMovies[]> = (props) => {
   return (
     <MYGrid>
       <Row>
-       {/*  <Col xs={12}> */}
-          <Grid container spacing={3}>
-            {movie.map((item) => (
-              <Grid item xs="auto" key={item.id}>
-                <Card
-                  key={item.id}
-                  title={item.title}
-                  description={item.overview}
-                  poster_path={item.poster_path}
-                  original_title={item.original_title}
-                  release_date={item.release_date}
-                  id={item.id}
-                />
-              </Grid>
-            ))}
-          </Grid>
+        <Grid container spacing={3} className="justify-content-around">
+          {movie.map((item) => (
+            <Grid item xs="auto" key={item.id}>
+              <Card
+                key={item.id}
+                title={item.title}
+                description={item.overview}
+                poster_path={item.poster_path}
+                original_title={item.original_title}
+                release_date={item.release_date}
+                id={item.id}
+              />
+            </Grid>
+          ))}
+        </Grid>
       </Row>
     </MYGrid>
   );

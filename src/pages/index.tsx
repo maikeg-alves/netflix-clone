@@ -5,8 +5,8 @@ import {
   Action,
   Drama,
   Fiction,
+  Footer,
   GridSearch,
-  Loader,
   Mylist,
   Popularity,
   RandomBanner,
@@ -33,10 +33,11 @@ const Home: NextPage<PageProps> = (props) => {
     const filteredMovies = props.movies.filter((movie) => {
       return movie.title.toLowerCase().includes(search.toLowerCase());
     });
+
     setMovies(filteredMovies);
 
     window.scrollTo(0, 500);
-  }, [search]);
+  }, [search, props]);
 
   return (
     <Container title="Netflix clone" direction="column">
@@ -77,6 +78,7 @@ const Home: NextPage<PageProps> = (props) => {
           </>
         )}
       </>
+      <Footer />
     </Container>
   );
 };

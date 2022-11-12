@@ -1,9 +1,8 @@
 import { Col } from 'react-bootstrap';
 import styled from 'styled-components';
 
-
 type Props = {
-  justifyContent : string;
+  justifyContent: string;
 };
 
 export const Container = styled(Col)<Props>`
@@ -12,7 +11,6 @@ export const Container = styled(Col)<Props>`
   align-items: center;
   margin: 20px auto;
   .assistir {
-    width: 100px;
     height: 40px;
     border-radius: 5px;
     border: none;
@@ -24,5 +22,4 @@ export const Container = styled(Col)<Props>`
       background-color: #e0e0e0;
     }
   }
-
 `;

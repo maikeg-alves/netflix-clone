@@ -6,7 +6,7 @@ import Drama from './Drama/Drama.module';
 import Fiction from './Fiction/Fiction.module';
 import Mylist from './Mylist/Mylist.module';
 import GridSearch from './GridSearch/GridSearch.module';
-import Loader from './Loader/Loader.module';
+import Footer from './Footer/Footer.module';
 
 export {
   RandomBanner,
@@ -17,5 +17,5 @@ export {
   Fiction,
   Mylist,
   GridSearch,
-  Loader,
+  Footer,
 };

@@ -1,4 +1,3 @@
-import { Skeleton } from '@mui/material';
 import React from 'react';
 import { Col } from 'react-bootstrap';
 import { Information, Poster } from '../../components';
@@ -28,15 +27,9 @@ const RandomBanner: React.FC<PosterProps> = (props) => {
     >
       <Col xs={12} className="ramdom-grup">
         <Col xs="auto">
-          {props.movies.length ? (
-            <Poster {...movie} />
-          ) : (
-            <Skeleton>
-              <Poster {...movie} />
-            </Skeleton>
-          )}
+          <Poster {...movie} />
         </Col>
-        <Col xs={12} className="text-grup" >
+        <Col xs={12} className="text-grup">
           <Information {...movie}>
             <ButtonAddMovie {...movie} />
           </Information>
