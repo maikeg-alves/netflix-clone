@@ -19,12 +19,6 @@ const Poster: React.FC<IPoster> = (props) => {
     return start;
   };
 
-  console.log(
-    !props.poster_path
-      ? 'https://via.placeholder.com/500x750'
-      : `https://image.tmdb.org/t/p/w500${props.poster_path}`,
-  );
-
   return (
     <>
       <MYPoster>

@@ -24,7 +24,7 @@ export const Random = styled(Col)<Props>`
   .ramdom-grup {
     padding: 20px 0;
     width: 100%;
-    max-width: 500px;
+
     display: flex;
     flex-direction: ${(props) => props.direction};
     justify-content: center;
@@ -34,6 +34,7 @@ export const Random = styled(Col)<Props>`
       display: flex;
       align-items: center;
       text-align: ${(props) => props.alignText};
+      max-width: 500px;
       margin: 0 20px;
     }
   }
