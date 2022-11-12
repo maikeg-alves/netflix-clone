@@ -7,44 +7,6 @@ type BsPrefixProps = {
 };
 
 export const MYCard = styled.div<BsPrefixProps>`
-  /*     background-image: url(${(props) => props.backgroundImage}) !important;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    border-radius: 25px; */
-  /*  background-color: #fff; */
-  /*    width: 260px !important;
-    color: white;
-    margin-left: 20px;
-    height: 350px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    padding: 20px; */
-  /* 
-    h2,
-    p,
-    button {
-      margin-top: 5px;
-      margin-bottom: 5px;
-    } */
-
-  /*.container-button {
-      display: flex;
-      justify-content: space-between;
-
-      button {
-        background-color: #000;
-        color: #fff;
-        border: none;
-        border-radius: 5px;
-        padding: 10px;
-        width: 100px;
-        font-weight: bold;
-        cursor: pointer;
-      }
-    } */
-
   a {
     text-decoration: none;
   }
@@ -57,7 +19,6 @@ export const MYCard = styled.div<BsPrefixProps>`
   .card {
     float: left;
     padding: 0 1.7rem;
-   /*  width: 50%; */
     min-width: 220px;
     width: 100%;
     color: white;
@@ -117,6 +78,7 @@ export const MYCard = styled.div<BsPrefixProps>`
     .title {
       margin-top: 10px;
       a {
+        font-size: 18px !important;
         text-decoration: none;
         color: white;
       }
