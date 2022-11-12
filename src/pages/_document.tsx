@@ -44,14 +44,10 @@ export default class MyDocument extends Document {
       <Html lang="pt">
         <Head>
           <meta charSet="utf-8" />
-
           <link
             rel="stylesheet"
             href="https://fonts.googleapis.com/css?family=Roboto:400,500,700"
           />
-         
-
-          <link rel="icon" href="/favicon.ico" />
         </Head>
         <body>
           <Main />
